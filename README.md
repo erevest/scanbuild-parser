@@ -1,6 +1,11 @@
 # clang_db_parser
 Parse code issues from clang scan-build html page to psql database. The code is very human
 
+Requirments:
+pandas
+psycopg2
+bs4
+
 1. Install psql and configure it.
 2. Paste you server data in main.py "connection" (9 line).
 3. Add table in psql with name "clang" and with rows "bug_group, bug_type, file, function, line, path_lengt"
