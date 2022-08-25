@@ -31,7 +31,6 @@ try:
     url = "http://127.0.0.1:8181/"
     response = requests.get(url)
     bs = BeautifulSoup(response.text, "lxml")
-    #https://vc.ru/newtechaudit/109368-web-parsing-osnovy-na-python
 
     start = False
     header_finished = False
@@ -58,7 +57,6 @@ try:
                 insert_query = "INSERT INTO clang (bug_group, bug_type, file, function, line, path_lengt) VALUES ( '{}', '{}', '{}','{}', '{}', '{}');".format(one_row[0], one_row[1], one_row[2], one_row[3], str(one_row[4]), str(one_row[5])) #работает  
                 cursor.execute(insert_query)
                 connection.commit()
-        #print(one_row[0])
 
 except (Exception, Error) as error:
     print("Ошибка при работе с PostgreSQL", error)
