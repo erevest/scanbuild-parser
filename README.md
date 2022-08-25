@@ -1,4 +1,4 @@
-# clang_db_parser
+# scanbuild-parser
 Parse code issues from clang scan-build html page to psql database. The code is very human
 
 Requirments:
@@ -21,3 +21,4 @@ Problems, issues? Write me on my email: yyyyxxxx@bk.ru
 4. Запустите main.py
 
 По вопросам прошу обращаться на почту yyyyxxxx@bk.ru
+Tags: parser scan-build, clang parser
