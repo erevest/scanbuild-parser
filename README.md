@@ -6,7 +6,7 @@ Parse code issues from clang scan-build html page to psql database. The code is 
 3. Add table in psql with name "clang" and with rows "bug_group, bug_type, file, function, line, path_lengt"
 4. Run the main.py
 
-Problems issues? Write me on my email: yyyyxxxx@bk.ru
+Problems, issues? Write me on my email: yyyyxxxx@bk.ru
 
 Парсер выявленых ошибок кода утилитой scan-build в базу данных PostgreSQL
 Парсит ошибки кода из html страницы в базу данных
